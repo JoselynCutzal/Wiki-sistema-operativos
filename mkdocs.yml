@@ -1,0 +1,42 @@
+site_name: Wiki de Sistemas Operativos 1
+site_description: Base de conocimientos académica sobre sistemas operativos
+site_author: Estudiante de Ingeniería en Sistemas
+site_url: https://TU_USUARIO.github.io/wiki-sistemas-operativos/
+repo_url: https://github.com/TU_USUARIO/wiki-sistemas-operativos
+repo_name: TU_USUARIO/wiki-sistemas-operativos
+nav:
+  - Inicio: index.md
+  - Unidad 1 - Introducción: unidades/unidad1.md
+  - Unidad 2 - Procesos: unidades/unidad2.md
+  - Unidad 3 - Concurrencia: unidades/unidad3.md
+  - Unidad 4 - Interbloqueos: unidades/unidad4.md
+  - Unidad 5 - Memoria: unidades/unidad5.md
+  - Simuladores: simuladores.md
+  - Arquitectura y desarrollo: DEVELOPMENT.md
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - toc:
+      permalink: true
+plugins:
+  - search
+extra_javascript:
+  - assets/simulators.js
+extra_css:
+  - assets/styles.css
